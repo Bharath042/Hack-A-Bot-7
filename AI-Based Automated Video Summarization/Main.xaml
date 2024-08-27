@@ -1,0 +1,328 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1112.8,4029.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:um="clr-namespace:UiPath.MLServices;assembly=UiPath.MLServices" xmlns:uma="clr-namespace:UiPath.MLServices.Activities;assembly=UiPath.MLServices.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.MLServices</x:String>
+      <x:String>UiPath.MLServices.Enums</x:String>
+      <x:String>UiPath.MLServices.Activities</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.MLServices</AssemblyReference>
+      <AssemblyReference>UiPath.MLServices.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="513.6,3964.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="video" />
+      <Variable x:TypeArguments="x:String" Name="filecontent" />
+      <Variable x:TypeArguments="x:String" Name="Jsonresponse" />
+      <Variable x:TypeArguments="x:String" Name="Filename" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="451.2,273.6" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter the Video file Name : " Title="Video_Summarization">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[video]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Transcribe Video to Text - AI Transcription Software | Restream" sap:VirtualizedContainerService.HintSize="451.2,1960.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="3b9f4dde-0c3e-40c5-93da-65c09b36d2d8" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1712" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Choose File'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3b9f4dde-0c3e-40c5-93da-65c09b36d2d8" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://restream.io/tools/transcribe-video-to-text" DesignTimeRectangle="901, 829, 115, 24" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Choose File' parentid='__next' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Choose File' parentid='__next' tag='SPAN' type='' class='' check:innerText='Choose File' /&gt;" Guid="c7d7df63-5abb-4b98-aa84-3c45cf1b4111" InformativeScreenshot="7c818b4efe3dd925218a84401c348417.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transcribe Video to Text - AI Transcription Software | Restream' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="871, 811, 175, 60" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Choose File' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Choose File' tag='BUTTON' type='' class='rounded-full py-3 px-6 bg-blue-600 text-white font-semibold mx-auto hover:bg-blue-500 transition-colors' check:innerText='Choose File' /&gt;" Guid="34a0cc18-d43a-4f69-a37b-527c1374a691" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Home'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3b9f4dde-0c3e-40c5-93da-65c09b36d2d8" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://restream.io/tools/transcribe-video-to-text" CVScreenId="12ba976a-16d0-460c-afbf-3c369bed4dd7" CvTextArea="75, 714, 50, 15" CvTextArgument="This PC" CvType="Text" DesignTimeRectangle="75, 702, 51, 40" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Control Host' cls='NamespaceTreeControl' title='Namespace Tree Control' /&gt;&lt;wnd ctrlid='100' title='Navigation Pane' /&gt;&lt;ctrl name='This PC' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Control Host' cls='NamespaceTreeControl' title='Namespace Tree Control' /&gt;&lt;wnd ctrlid='100' title='Navigation Pane' /&gt;&lt;ctrl name='This PC' role='outline item' automationid='' check:text='This PC' /&gt;" Guid="2eb6be9d-d97f-4ac3-8de9-5abfc5c32c8e" InformativeScreenshot="e5935915321337b6c3405ed6b8aa1d51.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="12ba976a-16d0-460c-afbf-3c369bed4dd7" CvElementArea="48, 708, 26, 24" CvType="Icon" DesignTimeRectangle="46, 706, 30, 28" ElementType="Icon" Guid="557a55f3-cada-4ecc-912a-3e10023b5953" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAYAAAB2+A+pAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANwSURBVEhL7ZTXT1NhGMa9URSRJatsKFgQEVBAjDdGEYU4oybGEY2aaGKixsEMo4Agq7KUoYIbBMEFLkBZpVCghRaKgAyJ/8fj+x3ghnw5hJCgF1y8ORfNeX75Pe97ukIikeBfzDJ4yWYZvGTzf4JlinzICkohyyuGp6IIHtkPIM28D/f0QrjdKYBrcj5c5XlwTsiFU5wCjrEKOETlwP52NiQ3s2B3PQN2l+XcbHFwXgl2jP7BdsMUQgamENw/iaCecQR2TyBANYaA9l/waxmF7/cR+DaMYOPnIXjVGeD1fhAbagfhUaWHzZV0brYo2DOnCCH6SWzT/UaQZkIAbukkoHIMfq2j2MyAjQxogHc9QRnw7QA83wxAWtEP95c6WF1K42aLgqUZ9xGsnURgzwywYwz+bQT8QZaNw/D5+hMbPxHwwyBk7wbhWa2Dx2s9Afvg+lQLlydaWF5I5WaLgt3TCrBVPY4tqnH4s1qbCdg0gk0Nw2T5E951Q5CR4YYasqRapa/I8kU/QfvgUqaFU6kGFmeTudmiYHY4s3tklgzo84UBaY8fDATUC7V6VJLlC7J8RsByAj7UwLG4F/YFapidSuJmi4Kd43Nnah2BDx0Oq9X7o4EsaZdkKa3UwZ0s3Z6TJQGdH2ngVNILhwfdBO2G3T01TE8kcLNFwezz8PlCwHo6HgHIDocsWa0VOgHoUq6B82NW6wywkIC5athmd8ImqxMmx+K52aJg+8hsArLDoT3WUqVVumlL2qMbq1XYYw/V2iMAJXkEzJkGWqV1wDK1A8aH47jZomDJjUyhVmY5u0fBsowsZ2q1L1RDks9q7YINWVpnqKah8naYJ7ZjzYFYbrYo2PZqxvTnMbdWMnQoIku2R1ZrThes73bAKl2F9WRpntQGs/g2mMa2wig8mpstCmb/Om5zPg+HImZJteZ2wVZBlkKtSlimtMNCroRZQitM41qwLroVa2/9wKqwKG62KNj6fBLWX0yF5fkUWJxLhvkZOcxOy2F6MomuNREmxxNgcjQexkfiYHwoFqv3x2B1RAyM9kUJwJWhkVi18xo3W3zH80xmfilNCfe3+WbB4I/fmqHsHUBbtx4lz6ppqtCk6kOjUouXNfXcd3izYPDuvREI3bcfe8IPICzioPCcnV1hEdx3eLOoqhczy+AlGgn+AvVvY6LnGT9MAAAAAElFTkSuQmCC" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="2" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="HardwareEvents" ScopeIdentifier="3b9f4dde-0c3e-40c5-93da-65c09b36d2d8" Text="[video + &quot;[k(Enter)]&quot;]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://restream.io/tools/transcribe-video-to-text" CVScreenId="c1ca534c-c4a8-40ad-a189-0d59f2701d7b" CvElementArea="1643, 46, 255, 45" CvType="InputBox" DesignTimeRectangle="1652, 60, 198, 20" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname=' Search This PC' cls='DirectUIHWND' /&gt;&lt;ctrl name=' Search This PC' role='pane' /&gt;&lt;ctrl automationid='SearchEditBox' /&gt;" FuzzySelectorArgument="&lt;wnd aaname=' Search This PC' cls='DirectUIHWND' /&gt;&lt;ctrl name=' Search This PC' role='pane' /&gt;&lt;ctrl automationid='SearchEditBox' role='editable text' /&gt;" Guid="f7d297f9-8602-4b20-853e-11bf85e6122e" InformativeScreenshot="dc912748df5a1abbc990c71bb6feb9de.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1854, 47, 38, 46" ElementType="Button" FullSelectorArgument="&lt;wnd aaname=' Search This PC' cls='DirectUIHWND' /&gt;&lt;ctrl name=' Search This PC' role='pane' /&gt;&lt;ctrl automationid='SearchBoxSearchButton' /&gt;" FuzzySelectorArgument="&lt;wnd aaname=' Search This PC' cls='DirectUIHWND' /&gt;&lt;ctrl name=' Search This PC' role='pane' /&gt;&lt;ctrl automationid='SearchBoxSearchButton' role='push button' check:text='Search' /&gt;" Guid="c81a9218-dee6-4228-b316-123589cd1e10" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="3b9f4dde-0c3e-40c5-93da-65c09b36d2d8" Text="[video + &quot;[k(Enter)]&quot;]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://restream.io/tools/transcribe-video-to-text" CVScreenId="ed6ffbb2-117c-4201-93c3-0dcb833e4a42" CvElementArea="228, 925, 1416, 31" CvType="InputBox" DesignTimeRectangle="234, 931, 1383, 20" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="f910a851-2c0e-4bae-b2e5-772cd6e3c65b" InformativeScreenshot="e2c85ca56aaea69b6de7e856250f016a.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="ed6ffbb2-117c-4201-93c3-0dcb833e4a42" CvTextArea="155, 932, 69, 16" CvTextArgument="File name:" CvType="Text" DesignTimeRectangle="157, 931, 67, 20" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' check:text='File &amp;amp;name:' /&gt;" Guid="48e3fc0e-3698-45d9-aab1-19e9d7c0c035" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Transcribe'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3b9f4dde-0c3e-40c5-93da-65c09b36d2d8" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://restream.io/tools/transcribe-video-to-text" CVScreenId="7ff6b335-c2d8-4c4a-96de-527282b6f2fe" CvElementArea="1206, 963, 222, 66" CvTextArea="1250, 989, 108, 20" CvTextArgument="Transcribe" CvType="Button" DesignTimeRectangle="1242, 984, 116, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Transcribe' parentid='__next' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Transcribe' parentid='__next' tag='SPAN' type='' class='capitalize pl-2' check:innerText='Transcribe' /&gt;" Guid="0192a80f-8c6e-4072-9324-f7c27501027b" InformativeScreenshot="65ce4cf19da33957bda7bc19a8fc2eed.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transcribe Video to Text - AI Transcription Software | Restream' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="7ff6b335-c2d8-4c4a-96de-527282b6f2fe" CvElementArea="1206, 963, 222, 66" CvTextArea="1250, 989, 108, 20" CvTextArgument="Transcribe" CvType="Button" DesignTimeRectangle="1212, 969, 211, 60" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='flex justify-center rounded-full items-center py-3 px-6 bg-blue-600 text-white font-semibold transition-bg transition-opacity duration-300 enabled:hover:bg-blue-500 disabled:opacity-50 disabled:cursor-not-allowed focus:outline' aaname='Transcribe' check:innerText='Transcribe' /&gt;" Guid="c16fd033-6bf4-4d71-a177-6c067a15219e" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="60" DisplayName="Click 'Reload'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3b9f4dde-0c3e-40c5-93da-65c09b36d2d8" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://restream.io/tools/transcribe-video-to-text?conversionId=c6a8e0ca-05bb-4fb4-9429-fc47072b8cb8" DesignTimeRectangle="105, 66, 43, 43" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Transcribe Video to Text - AI Transcription Software | Restream *' role='pane' /&gt;&lt;ctrl name='Reload' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Transcribe Video to Text - AI Transcription Software | Restream *' role='pane' /&gt;&lt;ctrl name='Reload' role='push button' automationid='' check:text='Reload' /&gt;" Guid="7887f4f9-7537-4beb-a75a-de0555158e8f" InformativeScreenshot="ce28eb4dd07b51dbf87ecf1ee3529a51.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Transcribe Video to Text - AI Transcription Software | Restream *' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="15" DisplayName="Click 'Download'" sap:VirtualizedContainerService.HintSize="353.6,218.4" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3b9f4dde-0c3e-40c5-93da-65c09b36d2d8" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://restream.io/tools/transcribe-video-to-text?conversionId=42d737ec-5179-4d39-95b3-3e93ebdeaf1b" CVScreenId="c1180913-deda-46f5-a843-68c80433e60b" CvElementArea="761, 829, 165, 66" CvTextArea="794, 852, 100, 18" CvTextArgument="Download" CvType="Button" DesignTimeRectangle="795, 850, 99, 24" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Download' parentid='__next' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Download' parentid='__next' tag='SPAN' type='' class='' check:innerText='Download' /&gt;" Guid="f2afda42-0a47-4c20-b1d9-6087a7652d53" InformativeScreenshot="72106eab3ac972a3e1d095a2217bf422.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transcribe Video to Text - AI Transcription Software | Restream' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="c1180913-deda-46f5-a843-68c80433e60b" CvElementArea="761, 829, 165, 66" CvTextArea="794, 852, 100, 18" CvTextArgument="Download" CvType="Button" DesignTimeRectangle="765, 832, 159, 60" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Download' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Download' tag='A' type='' class='inline-block rounded-full py-3 px-6 bg-blue-600 text-white font-semibold mx-auto hover:bg-blue-500 transition-colors' check:innerText='Download' /&gt;" Guid="c1dda86c-8a0d-4579-8177-254b2a16f671" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEySURBVDhPpdNJToRAFAbg6qBegDN0YhwSjsGWXSccADgBhzBRQV14EoclW1bgcAC2Nr1QE5NG+/m/F6pTZQpj4p98SQ2vIBRVypEjOINHeBk9wCkcwGT24BI+gSbwXAG7YIUX34Nrkcst8JptrsFV+JsrkBzDF2wnzfR9T3VdUxRF5mLGnyN7cjEObOlUVUVN00h7vV7TfD636uAc1LMxIHTCMKTZbEZd10l/sVhYdcB/R70ZA0KnKArK85yGYZB+EARWHbyCejcGxM9sNhuK49iqGckDJj8hyzJaLpfSTpLEqhnxYZMTZk3o8B6kaSrt1WpFvu9bdXAC6hCs06fDD/A8j9q2lX5ZlubiAfZBwr/DnPwLebsOn+07cBW63MAOWPnXZTKjr/MTfIx4tx3XWalvQrU+UXjYnJ4AAAAASUVORK5CYII=" InformativeScreenshot="e1b63440875c11225642250068255fd9.jpg" Selector="&lt;html app='chrome.exe' title='Transcribe Video to Text - AI Transcription Software | Restream' /&gt;" Title="Transcribe Video to Text - AI Transcription Software | Restream" Url="https://restream.io/tools/transcribe-video-to-text" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Downloads" sap:VirtualizedContainerService.HintSize="451.2,594.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="0f8ea162-74b8-4c5a-97a8-daf3f38e70d8" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,271.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Get Text 'c80e-cad4-41bd-b1c3-312…'" sap:VirtualizedContainerService.HintSize="353.6,182.4" sap2010:WorkflowViewState.IdRef="NGetText_2" OutUiElement="{x:Null}" ScopeIdentifier="0f8ea162-74b8-4c5a-97a8-daf3f38e70d8" ScrapingOptions="{x:Null}" TextString="[Filename]" Timeout="{x:Null}" Version="V3" WordsInfo="{x:Null}">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable CVScreenId="f2d6f58a-a62f-4de4-8ed3-b91f254f816c" CvTextArea="254, 257, 255, 15" CvType="AnyWordGroup" DesignTimeRectangle="255, 253, 294, 24" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;wnd aaname='Shell Folder View' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='Items View' cls='DirectUIHWND' /&gt;&lt;ctrl name='Items View' role='list' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='System.ItemNameDisplay' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Shell Folder View' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='Items View' cls='DirectUIHWND' /&gt;&lt;ctrl name='Items View' role='list' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='System.ItemNameDisplay' role='editable text' /&gt;" Guid="413ce73a-b95d-4f1d-82bb-b450547bfd53" InformativeScreenshot="40815c628ae65462a3933fc233e3acd5.png" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Downloads' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" Arguments="c:\users\victus\downloads" FilePath="C:\Windows\explorer.exe" IconBase64="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" InformativeScreenshot="fe216dd722ed26227214f3d67ff5a688.png" IsExactTitleEnabled="True" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Downloads' /&gt;" Title="Downloads" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="451.2,382.4" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,272" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="C:\Users\VICTUS\OneDrive\Documents\UiPath\AI-Based Automated Video Summarization" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="353.6,183.2" sap2010:WorkflowViewState.IdRef="MoveFile_2" Path="[&quot;C:\Users\VICTUS\Downloads\&quot;+Filename+&quot;.txt&quot;]" />
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <ui:ReadTextFile File="{x:Null}" Content="[filecontent]" DisplayName="Read Text File" FileName="[&quot;C:\Users\VICTUS\Downloads\&quot;+Filename+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="451.2,112.8" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+    <uma:MLSkills Name="{x:Null}" ApiKey="{x:Null}" Connection="Robot" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="MLSkill" ExternApiFileType="JSON" sap:VirtualizedContainerService.HintSize="451.2,443.2" sap2010:WorkflowViewState.IdRef="MLSkills_1" Item="[filecontent]" JsonResponse="[Jsonresponse]" NextPageNum="2" NumberOfRetries="{x:Null}" RefreshList="False" ResponseHeaders="{x:Null}" Result="{x:Null}" SkillURL="{x:Null}" StatusCode="{x:Null}" TimeOutMs="{x:Null}" TotalCount="1">
+      <uma:MLSkills.MLSkillList>
+        <scg:List x:TypeArguments="um:MLSkill" Capacity="4">
+          <x:Reference>__ReferenceID0</x:Reference>
+        </scg:List>
+      </uma:MLSkills.MLSkillList>
+      <uma:MLSkills.SelectedMLSkill>
+        <um:MLSkill x:Name="__ReferenceID0" AccessUri="https://ai-uipath-eus.deskover.com/mlskills/e935f4cc-d60a-466d-a708-15f2b66b68e8/20342a86-906b-4168-bab7-ed3951d76cfb/text-summarization-skill" AccountId="e935f4cc-d60a-466d-a708-15f2b66b68e8" Description="" Id="4116a603-767f-4acf-95cf-0176b5493446" InputDescription="Text to be summarized as a string. On small inputs (less than 300 characters), the model will just return the unaltered input" InputType="JSON" Name="Text_Summarization_Skill" OutputDescription="Summarized text as a string." ProjectId="20076396-65af-4184-bc01-cff8d8de7faf" TenantId="20342a86-906b-4168-bab7-ed3951d76cfb" />
+      </uma:MLSkills.SelectedMLSkill>
+    </uma:MLSkills>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="451.2,108.8" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[Jsonresponse]" />
+  </Sequence>
+</Activity>
